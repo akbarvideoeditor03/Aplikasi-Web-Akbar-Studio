@@ -1,0 +1,433 @@
+* {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    box-sizing: border-box;
+}
+
+.container{
+    display: flex;
+}
+
+.card{
+    box-shadow: 5px 5px 10px rgba(18, 18, 18, 0.354);
+    border-radius: 5px;
+    padding: 30px;
+    margin-bottom: 2%;
+}
+
+.justify{
+    text-align: justify;
+}
+
+.text-bold{
+    font-weight: bold;
+}
+
+ol.text, ul.text, p.text{
+    padding-left: 0.75cm;
+    line-height: 1cm;
+}
+
+
+/*barisan header*/
+header {
+    display: inline;
+    font-weight: bold;
+    height: max-content;
+    color: white;
+}
+
+.flex-header{
+    flex-direction: column;
+    flex-wrap: wrap;
+    padding-inline-start: 40px;
+    padding-inline-end: 40px;
+}
+
+.flex-header-nav{
+    flex-direction: row;
+    flex-wrap: nowrap;
+    position: sticky;
+    top: 0px;
+    z-index: 50;
+}
+
+header a {
+    text-decoration: none;
+    color: rgb(255, 221, 0);
+}
+
+header a:hover {
+    font-weight: bold;
+    color: rgb(255, 221, 0);
+}
+
+header h1.h1{
+    font-weight: bold;
+    margin-bottom: -5px;
+}
+
+header p{
+    margin-bottom: -5px;
+}
+
+.img-head{
+    background-image: url(../images/header/header.svg); 
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+header cite {
+    font-size: 50%;
+    flex-wrap: nowrap;
+    align-self: flex-end
+}
+
+.header-img-cite{
+    padding-top: 35px;
+}
+
+nav{
+    background-color: rgb(52, 45, 40);
+    height: 60px;
+
+    justify-content: center;
+    position: sticky;
+    top: 0px;
+    
+    color: white;
+    font-size: 100%;
+}
+
+.sticky{
+    position: sticky;
+    top: 0px;
+    z-index: 20;
+}
+
+nav li{
+    list-style-type: none;
+}
+
+nav i{
+    font-size: 150%;
+}
+
+nav a {
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+}
+
+nav a:hover{
+    font-weight: bold;
+    color: rgb(255, 221, 0);
+}
+
+nav ul{
+    margin-left: -40px;
+    gap: 2rem;
+}
+
+nav ul.dropdown {
+    background-color: rgb(80, 71, 65);
+}
+
+nav ul.dropdown li {
+    display: inline-block;
+    position: relative;
+}
+
+nav ul.dropdown li a {
+    display: block;
+    padding: 20px 20px
+}
+
+nav ul li ul.dropdown li{
+    display: block;
+    margin-left: -40px;
+}
+
+nav ul li ul.dropdown{
+    width: 40%;
+    background-color: rgb(84, 77, 71);
+    position: absolute;
+    z-index: 5;
+    display: none;
+}
+
+nav ul li ul li a:hover{
+    background-color: rgb(48, 42, 38);
+}
+
+nav ul li:hover ul.dropdown{
+    display: block;
+}
+
+.nav-page-2{
+    padding-left: 40px;
+    justify-content: start;
+}
+
+
+/*barisan body-main*/
+body{
+    margin: 0px;
+}
+
+main{
+    padding: 3%;
+    background-color: rgb(230, 230, 230);
+}
+
+#content{
+    flex-wrap: wrap;
+    flex-direction: row;
+    gap: 20px;
+}
+
+main .card-hover:hover{
+    background-color: rgb(255, 253, 240);
+    box-shadow: 5px 5px 10px rgba(255, 145, 0, 0.519);
+    transition: all ease-in-out 300ms;
+    position: relative;
+    z-index: 1;
+    bottom: 2px;
+}
+
+main h2.page1{
+    font-weight: bold;
+}
+
+main h3.page1{
+    padding-top: 10%;
+    font-weight: bold;
+}
+
+main a{
+    text-decoration: none;
+    color: black;
+}
+
+main a:hover{
+    color: rgb(44, 44, 44);
+}
+
+main section    {
+    padding-left: 20px;
+}
+
+main cite{
+    font-size: 50%;
+}
+
+aside   {
+    height: fit-content;
+}
+
+.profil{
+    line-height: 1cm;
+}
+
+.h3-hover:hover{
+    color: rgb(214, 186, 0);
+}
+
+.profil-img {
+    width: 100%;
+    max-height: 350px;
+    
+    object-fit: cover;
+    object-position: center;
+}
+
+.content-article {
+    gap: 2%;
+}
+
+.hover-bold:hover{
+    color: rgb(44, 44, 44);
+    font-weight: bold;
+}
+
+.img{
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.img-learning{
+    background-image: url('../images/main/learning-images/pemula.png');
+}
+
+.img-social {
+    background-image: url('../images/main/services-images/social.png');
+}
+
+.img-promo{
+    background-image: url('../images/main/services-images/promotion.png');
+}
+
+.img-education{
+    background-image: url('../images/main/services-images/education.png');
+}
+
+.img-event{
+    background-image: url('../images/main/services-images/event.png');
+}
+
+.img-live{
+    background-image: url('../images/main/services-images/live.png');
+}
+
+.learning   {
+    flex: 1;
+}
+
+.flex-article{
+    flex: 2;
+}
+
+.flex-aside{
+    flex: 1;
+}
+
+.main-production   {
+    flex: 1;
+}
+
+
+/*barisan footer*/
+footer {
+    height: max-content;
+    background-color: rgb(37, 37, 37);
+    color: white;
+    padding: 20px;
+}
+
+footer tr, td{
+    vertical-align: top;
+}
+
+footer h5{
+    margin-bottom: -5%;
+}
+
+footer a{
+    font-weight: bold;
+    text-decoration: none;
+    color: white;
+}
+
+footer a:hover{
+    color: rgb(255, 221, 0);
+}
+
+footer li {
+    margin-bottom: 5%;
+    list-style: none;
+}
+
+.flex-footer-top {
+    align-items: start;
+    gap: 2%;
+}
+
+.footer-social{
+    flex: 1;
+}
+
+.footer-address{
+    flex: 2;
+}
+
+.footer-help{
+    flex: 1;
+}
+
+.social-media{
+    flex-direction: column;
+    gap: 20px;
+}
+
+.flex-footer-bottom{
+    justify-content: center;
+    align-items: center;
+
+}
+
+.logo-footer{
+    width: 45px;
+    padding-right: 10px;
+}
+
+.flex-footer-bottom{
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+}
+
+
+/*barisan media-screen*/
+@media screen and (max-width: 576px) {
+    header h1, header p{
+        text-align: center;
+    }
+
+    nav {
+        justify-content: center;
+    }
+    .flex-footer-bottom{
+        font-size: 60%;
+    }
+}
+
+@media screen and (max-width: 768px){
+    
+    main section{
+        padding-left: 0px;
+    }
+
+    #content{
+        flex-wrap: nowrap;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    footer .container{
+        flex-direction: column;
+        gap: 20px;
+    }
+    
+}
+
+@media screen and (min-width: 769px){
+    li.nav-profil{
+        display: none;
+    }
+}
+
+@media screen and (max-width: 1000.5px){
+    .nav-large {
+        display: none;
+    }
+}
+
+@media screen and (min-width: 1000.5px){
+    .nav-small {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 1200.5px){
+    nav a{
+        font-size: smaller;
+    }
+}
+
+@media screen and (min-width: 577px) and (max-width: 1200.5px) {
+    nav {
+        justify-content: start;
+        padding-left: 3.5%;
+    }
+}
